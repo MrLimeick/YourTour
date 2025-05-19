@@ -1,0 +1,16 @@
+.histories__content {
+    width:1170px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.histories__card {
+    height: 567px;
+    width: 100%;
+
+    /* flex: 1; */
+
+    background-color: var(--green-400);
+    border-radius: 50px;
+}

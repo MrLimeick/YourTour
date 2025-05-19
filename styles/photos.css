@@ -1,0 +1,29 @@
+.photos__content {
+    width: 100%;
+    height: 1222px;
+
+    box-sizing: border-box;
+    padding: 0 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.photos__content-row {
+    width: 100%;
+    /* width: 1860px; */
+    height: 301px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.photos__content-row img {
+    width: 1px;
+    object-fit: cover;
+    flex: 1;
+    height: 100%;
+    border-radius: 50px;
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourTour</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="styles/font-styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/choose-tour.css" />
+    <link rel="stylesheet" href="styles/build.css" />
+    <link rel="stylesheet" href="styles/reviews.css" />
+    <link rel="stylesheet" href="styles/photos.css" />
+    <link rel="stylesheet" href="styles/histories.css" />
+</head>
+
+<body>
+    <div class="Header">
+        <div class="frame-3">
+            <div class="frame-64">
+                <img src="YourTour.svg"></img>
+                <div class="frame-1">
+                    <a class="p-normal" href="#">Туры</a>
+                    <a class="p-normal" href="#">Создать тур</a>
+                    <a class="p-normal" href="#">Отзывы</a>
+                    <a class="p-normal" href="#">Истории</a>
+                </div>
+                <div class="p-normal">+7 999 999 99 99</div>
+            </div>
+        </div>
+
+        <div class="frame-63">
+            <h1 style="width: 768px; text-align: center;">Идеальные путешествия существуют</h1>
+            <span class="p-normal" style="width: 562px; text-align: center">Идейные соображения высшего порядка, а также
+                рамки и место обучения кадров</span>
+            <a class="small-button p-small" href="#">Найти тур</a>
+        </div>
+    </div>
+
+    <section> <!-- Choose-Tour -->
+        <div class="frame-70">
+            <h2>Выбери свой тур</h2>
+            <div class="frame-5">
+                <span class="tab p-big" style="height: 31px;">Популярные</span>
+                <span class="tab p-big">Авторские</span>
+                <span class="tab p-big">Походы</span>
+                <span class="tab p-big">Сплавы</span>
+                <span class="tab p-big">Велопрогулки</span>
+            </div>
+        </div>
+        <div class="choose-tour__content">
+            <div class="choose-tour__content-row">
+                <div class="choose-tour__card">
+                    <img src="tour-photos/card tour photo-1.png">
+                    <div class="choose-tour__card-content">
+                        <div class="choose-tour__card-text">
+                            <h3 class="choose-tour__card-header">Путешествие в горы</h3>
+                            <span class="choose-tour__card-price">от 80 000 руб</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-tour__card">
+                    <img src="tour-photos/card tour photo-2.jpg">
+                    <div class="choose-tour__card-content">
+                        <div class="choose-tour__card-text">
+                            <h3 class="choose-tour__card-header">Путешествие в горы</h3>
+                            <span class="choose-tour__card-price">от 80 000 руб</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-tour__card">
+                    <img src="tour-photos/card tour photo-3.png">
+                    <div class="choose-tour__card-content">
+                        <div class="choose-tour__card-text">
+                            <h3 class="choose-tour__card-header">Путешествие в горы</h3>
+                            <span class="choose-tour__card-price">от 80 000 руб</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="choose-tour__content-row">
+                <div class="choose-tour__card">
+                    <img src="tour-photos/card tour photo-4.jpg">
+                    <div class="choose-tour__card-content">
+                        <div class="choose-tour__card-text">
+                            <h3 class="choose-tour__card-header">Путешествие в горы</h3>
+                            <span class="choose-tour__card-price">от 80 000 руб</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-tour__card">
+                    <img src="tour-photos/card tour photo-5.jpg">
+                    <div class="choose-tour__card-content">
+                        <div class="choose-tour__card-text">
+                            <h3 class="choose-tour__card-header">Путешествие в горы</h3>
+                            <span class="choose-tour__card-price">от 80 000 руб</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="choose-tour__card">
+                    <img src="tour-photos/card tour photo-6.jpg">
+                    <div class="choose-tour__card-content">
+                        <div class="choose-tour__card-text">
+                            <h3 class="choose-tour__card-header">Путешествие в горы</h3>
+                            <span class="choose-tour__card-price">от 80 000 руб</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section> <!-- Build -->
+        <div class="section__header">
+            <h2>Собери свой тур</h2>
+            <span class="p-normal" style="color: var(--gray-300);">
+                Идейные соображения высшего порядка,
+                <p>а также рамки и место обучения кадров</p>
+            </span>
+        </div>
+        <form class="p-normal build__form">
+            <div class="build__form-row">
+                <div class="build__element">
+                    <span>Имя</span>
+                    <input type="text">
+                </div>
+                <div class="build__element">
+                    <span>Направление</span>
+                    <select>
+                        <option>Куда хотите ехать</option>
+                    </select>
+                </div>
+            </div>
+            <div class="build__form-row">
+                <div class="build__element">
+                    <span>Email</span>
+                    <input type="email" required>
+                </div>
+                <div class="build__element">
+                    <label for="phone">Телефон:</label>
+                    <input name="phone" type="tel" pattern="^/+7 $\d{3}$ \d{3}-\d{2}-\d{2}$"
+                        placeholder="+7 (___)___-__-__" required>
+                </div>
+            </div>
+            <div class="build__form-row">
+                <div class="build__element">
+                    <span>Дата от</span>
+                    <input type="datetime">
+                </div>
+                <div class="build__element">
+                    <span>Дата до</span>
+                    <input type="datetime">
+                </div>
+            </div>
+            <input type="submit">
+        </form>
+    </section>
+
+    <section> <!-- Reviews -->
+        <div class="section__header">
+            <h2>
+                Отзывы наших
+                <p>путешественников</p>
+            </h2>
+            <span class="p-normal" style="color: var(--gray-300);">
+                Идейные соображения высшего порядка,
+                <p>а также рамки и место обучения кадров</p>
+            </span>
+        </div>
+
+        <div class="reviews__content">
+            <div class="reviews__card">
+                <span class="p-big">
+                    Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому
+                    кругу (специалистов) участие в формировании новых предложений. Идейные соображения высшего порядка,
+                    а также начало повседневной работы по формированию позиции позволяет оценить значение модели
+                    развития.
+                </span>
+            </div>
+            <div class="reviews__card">
+                <span class="p-big">
+                    Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в
+                    формировании системы обучения кадров, соответствует насущным потребностям.
+                    Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности
+                    обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная
+                    практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает
+                    создание модели развития.
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section> <!-- Photos -->
+        <div class="section__header">
+            <h2>
+                Фотографии путешествий
+            </h2>
+            <span class="p-normal" style="color: var(--gray-300);">
+                Идейные соображения высшего порядка,
+                <p>а также рамки и место обучения кадров</p>
+            </span>
+        </div>
+
+        <div class="photos__content">
+            <div class="photos__content-row">
+                <img src="photos/travel photo-1.jpg">
+                <img src="photos/travel photo-2.jpg">
+                <img src="photos/travel photo-3.jpg">
+                <img src="photos/travel photo-4.jpg">
+            </div>
+            <div class="photos__content-row">
+                <img src="photos/travel photo-5.jpg">
+                <img src="photos/travel photo-6.jpg">
+                <img src="photos/travel photo-7.jpg">
+                <img src="photos/travel photo-8.png">
+                <img src="photos/travel photo-9.jpg">
+            </div>
+            <div class="photos__content-row">
+                <img src="photos/travel photo-10.jpg">
+                <img src="photos/travel photo-11.jpg">
+                <img src="photos/travel photo-12.jpg">
+                <img src="photos/travel photo-13.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section> <!-- Histories -->
+        <div class="section__header">
+            <h2>
+                Истории путешествий
+            </h2>
+            <span class="p-normal" style="color: var(--gray-300);">
+                Идейные соображения высшего порядка,
+                <p>а также рамки и место обучения кадров</p>
+            </span>
+        </div>
+
+        <div class="histories__content">
+            <div class="histories__card"></div>
+            <div class="histories__card"></div>
+            <div class="histories__card"></div>
+        </div>
+    </section>
+</body>
+
+</html>

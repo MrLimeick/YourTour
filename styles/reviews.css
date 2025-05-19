@@ -1,0 +1,20 @@
+.reviews__content {
+    width: 1170px;
+    height: 673px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.reviews__card {
+    background-color: var(--beige-200);
+    color: var(--black);
+
+    border-radius: 50px;
+
+    display: block;
+    flex: 1;
+
+    padding: 40px;
+}
