@@ -53,3 +53,93 @@ select {
     font-size: 20px;
     line-height: 142%;
 }
+
+select,
+::picker(select) {
+    appearance: base-select;
+}
+
+select::picker-icon {
+    color: #999;
+    transition: 0.4s rotate;
+}
+
+select:open::picker-icon {
+    rotate: 180deg;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    flex: 1;
+}
+
+textarea {
+    resize: none;
+
+    border-radius: 10px;
+    background-color: var(--beige-100);
+    border: 1px solid var(--beige-200);
+    color: var(--gray-300);
+    padding: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+
+    flex: 1;
+}
+
+.build__form_radio {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.build__form_radio_group {
+    display: flex;
+    flex-direction: row;
+    gap: 31px;
+}
+
+.build__form-checkbox {
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+}
+
+.build__form_buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.find_tour {
+    display: block;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    width: 235px;
+    background-color: var(--green-400);
+    border-radius: 10px;
+
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+}
+
+.reset_button {
+    display: block;
+    box-sizing: border-box;
+    padding: 15px 30px;
+    width: 235px;
+    background-color: var(--green-100);
+    border-radius: 10px;
+
+    color: var(--green-400);
+    text-align: center;
+    text-decoration: none;
+}

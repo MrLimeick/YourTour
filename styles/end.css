@@ -1,0 +1,19 @@
+.end {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: fit-content;
+}
+
+.end>img {
+    width: 370px;
+    height: 370px;
+    border-radius: 50px;
+}
+
+.end__text {
+    width: 371px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -1,4 +1,4 @@
-.Header {
+#header {
     width: 100%;
     
     display: flex;
@@ -7,11 +7,11 @@
     color: white;
 
     background: url(../header-img.png), linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%);
+    background-size: cover;
 }
 
 .frame-3 {
     width: 100%;
-    /* width: 1920px; */
     height: 88px;
 
     display: flex;
@@ -44,7 +44,6 @@
 
 .frame-63 {
     width: 100%;
-    /* width: 1920px; */
     height: 743px;
 
     display: flex;
