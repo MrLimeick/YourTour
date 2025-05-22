@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+:root {
     --black: #1B1F2B;
     --white: #FFFFFF;
 
@@ -93,8 +93,7 @@ section {
     align-items: center;
 }
 
-.frame-5
-{
+.frame-5 {
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -161,4 +160,47 @@ footer {
     bottom: 0;
     height: 2px;
     background-color: var(--black);
+}
+
+.build__form_checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 11px;
+}
+
+.checkbox {
+    display: block;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+
+    box-sizing: border-box;
+    border: 2px solid var(--black);
+    border-radius: 5px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    opacity: 0;
+}
+
+.checkbox input:checked~.checkmark {
+    opacity: 1;
 }
