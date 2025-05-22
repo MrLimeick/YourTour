@@ -204,3 +204,57 @@ footer {
 .checkbox input:checked~.checkmark {
     opacity: 1;
 }
+
+/* Customize the label (the container) */
+.radio {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.radio-checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 26px;
+    width: 26px;
+    box-sizing: border-box;
+    border: 2px solid var(--black);
+    border-radius: 50%;
+}
+
+.radio-checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio input:checked~.radio-checkmark:after {
+    display: block;
+}
+
+.radio .radio-checkmark:after {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border-radius: 50%;
+    background: black;
+}

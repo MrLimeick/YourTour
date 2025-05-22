@@ -176,6 +176,7 @@
                     <input type="datetime" placeholder="ДД.ММ.ГГГГ" required>
                 </div>
             </div>
+            
             <div class="comment">
                 <label>Комментарий</label>
                 <textarea></textarea>
@@ -184,14 +185,14 @@
             <div class="build__form_radio">
                 <label>Вам есть 18 лет?</label>
                 <div class="build__form_radio_group">
-                    <div class="radio">
-                        <input type="radio" name="is18yearOld">
-                        <label>Да</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="is18yearOld">
-                        <label>Нет</label>
-                    </div>
+                    <label class="radio">Да
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="radio-checkmark"></span>
+                    </label>
+                    <label class="radio">Нет
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="radio-checkmark"></span>
+                    </label>
                 </div>
             </div>
 
