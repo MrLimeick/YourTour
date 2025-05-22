@@ -21,7 +21,6 @@
 }
 
 body {
-    /* width: 1920px; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -45,10 +44,9 @@ section {
 
 * {
     margin: 0;
-
 }
 
-.small-button {
+.small_button {
     color: var(--black);
     text-decoration: none;
     display: flex;
@@ -60,12 +58,12 @@ section {
 }
 
 /* ---- small_button ---- */
-.small-button:hover {
+.small_button:hover {
     color: var(--white);
     background-color: var(--orange-200);
 }
 
-.small-button:active {
+.small_button:active {
     color: var(--black);
     background-color: var(--orange-100);
 }
@@ -150,6 +148,8 @@ footer {
     position: relative;
     text-decoration: none;
     color: var(--black);
+
+    cursor: pointer;
 }
 
 .black_text_button:hover::after {
