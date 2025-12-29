@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="styles/photos.css" />
     <link rel="stylesheet" href="styles/histories.css" />
     <link rel="stylesheet" href="styles/end.css" />
+    
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="styles/mobile/styles.css" />
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="styles/mobile/build.css" />
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="styles/mobile/font-style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="styles/mobile/choose_tour.css" />
+    <link rel="stylesheet" media="screen and (max-width: 900px)" href="styles/mobile/photos.css" />
 </head>
 
 <body>
@@ -33,14 +39,14 @@
         </div>
 
         <div class="frame-63">
-            <h1 style="width: 768px; text-align: center;">Идеальные путешествия существуют</h1>
-            <span class="p-normal" style="width: 562px; text-align: center">Идейные соображения высшего порядка, а также
+            <h1 class="header__headline">Идеальные путешествия существуют</h1>
+            <span class="header__subheadline p-normal" style="text-align: center">Идейные соображения высшего порядка, а также
                 рамки и место обучения кадров</span>
             <a class="small_button p-small" href="#">Найти тур</a>
         </div>
     </div>
 
-    <section id="choose_tour"> <!-- choose_tour -->
+    <section id="choose_tour" class="labeled_section"> <!-- choose_tour -->
         <div class="frame-70">
             <h2>Выбери свой тур</h2>
             <div class="frame-5 p-big">
@@ -134,7 +140,7 @@
 
     </section>
 
-    <section id="build"> <!-- Build -->
+    <section id="build" class="labeled_section"> <!-- Build -->
         <div class="section__header">
             <h2>Собери свой тур</h2>
             <span class="p-normal" style="color: var(--gray-300);">
@@ -146,47 +152,47 @@
             <div class="build__form-row">
                 <div class="build__element">
                     <span>Имя</span>
-                    <input type="text" placeholder="Введите Ваше имя" required>
+                    <input type="text" placeholder="Введите Ваше имя" class="p-normal" required>
                 </div>
                 <div class="build__element">
                     <span>Направление</span>
                     <select>
-                        <option>Куда хотите ехать</option>
+                        <option class="p-normal">Куда хотите ехать</option>
                     </select>
                 </div>
             </div>
             <div class="build__form-row">
                 <div class="build__element">
                     <span>Email</span>
-                    <input type="email" placeholder="example@mail.com" required>
+                    <input type="email" placeholder="example@mail.com" class="p-normal" required>
                 </div>
                 <div class="build__element">
                     <label for="phone">Телефон:</label>
                     <input name="phone" type="tel" pattern="^/+7 $\d{3}$ \d{3}-\d{2}-\d{2}$"
-                        placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
+                        placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" class="p-normal" required>
                 </div>
             </div>
             <div class="build__form-row">
                 <div class="build__element">
                     <span>Дата от</span>
-                    <input type="datetime" placeholder="ДД.ММ.ГГГГ" required>
+                    <input type="datetime" placeholder="ДД.ММ.ГГГГ" class="p-normal" required>
                 </div>
                 <div class="build__element">
                     <span>Дата до</span>
-                    <input type="datetime" placeholder="ДД.ММ.ГГГГ" required>
+                    <input type="datetime" placeholder="ДД.ММ.ГГГГ" class="p-normal" required>
                 </div>
             </div>
 
             <div class="comment">
                 <label>Комментарий</label>
-                <textarea></textarea>
+                <textarea class="p-normal"></textarea>
             </div>
 
             <div class="build__form_radio">
                 <label>Вам есть 18 лет?</label>
                 <div class="build__form_radio_group">
                     <label class="radio">Да
-                        <input type="radio" checked="checked" name="radio">
+                        <input type="radio" checked="checked" name="radio" class="p-normal">
                         <span class="radio-checkmark"></span>
                     </label>
                     <label class="radio">Нет
@@ -198,7 +204,7 @@
 
             <div class="build__form_checkbox">
                 <label class="checkbox">
-                    <input type="checkbox" checked="checked">
+                    <input type="checkbox" checked="checked" class="p-normal">
                     <img class="checkmark" src="icons/checkmark.svg">
                 </label>
                 <label class="p-small">
@@ -208,13 +214,14 @@
             </div>
 
             <div class="build__form_buttons">
-                <a href="#choose_tour" class="find_tour p-normal">Найти тур</a>
-                <input type="reset" value="Сбросить" class="reset_button">
+                <input type="submit" value="Найти тур" class="find_tour p-normal">
+                <!-- <a href="#choose_tour" class="find_tour p-normal">Найти тур</a> -->
+                <input type="reset" value="Сбросить" class="reset_button p-normal">
             </div>
         </form>
     </section>
 
-    <section id="reviews"> <!-- Reviews -->
+    <section id="reviews" class="labeled_section"> <!-- Reviews -->
         <div class="section__header">
             <h2>
                 Отзывы наших
@@ -306,7 +313,7 @@
         </div>
     </section>
 
-    <section id="histories"> <!-- Histories -->
+    <section id="histories" class="labeled_section"> <!-- Histories -->
         <div class="section__header">
             <h2>
                 Истории путешествий

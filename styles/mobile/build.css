@@ -1,0 +1,8 @@
+.build__form {
+    border-radius: 30px;
+    padding: 20px 20px 40px 20px;
+}
+
+.build__form-row {
+    flex-direction: column;
+}

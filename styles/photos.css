@@ -18,8 +18,20 @@
     gap: 30px;
 }
 
+@media only screen and (max-width: 1170px) {
+    .photos__content-row>img:nth-last-child(1) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .photos__content-row>img:nth-last-child(2) {
+        display: none;
+    }
+}
+
 .photos__content-row img {
-    width: 1px;
+    min-width: 0;
     object-fit: cover;
     flex: 1;
     height: 100%;

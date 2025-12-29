@@ -17,3 +17,21 @@
     flex-direction: column;
     gap: 20px;
 }
+
+@media screen and (max-width: 900px) {
+    .end {
+        flex-direction: column;
+    }
+
+    .end>img {
+        width: 130px;
+        height: 133px;
+        border-radius: 20px;
+    }
+
+    .end__text {
+        text-align: center;
+    }
+
+
+}

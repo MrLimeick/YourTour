@@ -42,9 +42,33 @@ section {
     align-items: center;
 }
 
+/* FIXME: Неправильное название */
+.labeled_section {
+    max-width: 1276px;
+    padding: 0 53px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        gap: 75px
+    }
+
+    section {
+        gap: 50px
+    }
+
+    .labeled_section {
+        padding: 0 21px;
+        box-sizing: border-box;
+    }
+}
+
 * {
     margin: 0;
 }
+
+/* ---- small_button ---- */
 
 .small_button {
     color: var(--black);
@@ -57,7 +81,6 @@ section {
     box-sizing: border-box;
 }
 
-/* ---- small_button ---- */
 .small_button:hover {
     color: var(--white);
     background-color: var(--orange-200);

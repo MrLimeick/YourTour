@@ -1,0 +1,9 @@
+.choose_tour__content {
+    grid-template-columns: auto;
+    box-sizing: border-box;
+}
+
+.choose_tour__card {
+    height: 318px;
+    border-radius: 20px;
+}

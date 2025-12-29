@@ -1,0 +1,3 @@
+.photos__content-row>img:nth-last-child(2) {
+    display: none;
+}
