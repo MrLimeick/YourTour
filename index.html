@@ -15,7 +15,9 @@
     <link rel="stylesheet" href="styles/photos.css" />
     <link rel="stylesheet" href="styles/histories.css" />
     <link rel="stylesheet" href="styles/end.css" />
-    
+
+
+
     <link rel="stylesheet" media="screen and (max-width: 900px)" href="styles/mobile/styles.css" />
     <link rel="stylesheet" media="screen and (max-width: 900px)" href="styles/mobile/build.css" />
     <link rel="stylesheet" media="screen and (max-width: 900px)" href="styles/mobile/font-style.css" />
@@ -25,22 +27,26 @@
 
 <body>
     <div id="header">
-        <div class="frame-3">
-            <div class="frame-64">
-                <img src="YourTour.svg"></img>
-                <div class="frame-1 p-normal">
-                    <a class="white_text_button" href="#">Туры</a>
-                    <a class="white_text_button" href="#">Создать тур</a>
-                    <a class="white_text_button" href="#">Отзывы</a>
-                    <a class="white_text_button" href="#">Истории</a>
+        <div class="navbar-container">
+            <div id="navbar" class="frame-3">
+                <div class="frame-64">
+                    <img id="logo" src="YourTour.svg"></img>
+                    <div class="frame-1 p-normal">
+                        <a class="text_button" href="#">Туры</a>
+                        <a class="text_button" href="#">Создать тур</a>
+                        <a class="text_button" href="#">Отзывы</a>
+                        <a class="text_button" href="#">Истории</a>
+                    </div>
+                    <div class="p-normal">+7 999 999 99 99</div>
                 </div>
-                <div class="p-normal">+7 999 999 99 99</div>
             </div>
         </div>
 
+
         <div class="frame-63">
             <h1 class="header__headline">Идеальные путешествия существуют</h1>
-            <span class="header__subheadline p-normal" style="text-align: center">Идейные соображения высшего порядка, а также
+            <span class="header__subheadline p-normal" style="text-align: center">Идейные соображения высшего порядка, а
+                также
                 рамки и место обучения кадров</span>
             <a class="small_button p-small" href="#">Найти тур</a>
         </div>
@@ -50,7 +56,7 @@
         <div class="frame-70">
             <h2>Выбери свой тур</h2>
             <div class="frame-5 p-big">
-                <span class="tab" style="height: 31px;">Популярные</span>
+                <span class="tab active" style="height: 31px;" onclick="click()">Популярные</span>
                 <span class="tab">Авторские</span>
                 <span class="tab">Походы</span>
                 <span class="tab">Сплавы</span>
@@ -435,6 +441,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

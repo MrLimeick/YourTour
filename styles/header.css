@@ -10,6 +10,8 @@
     background-size: cover;
 }
 
+/* === NavBar === */
+
 .frame-3 {
     width: 100%;
     height: 88px;
@@ -18,6 +20,30 @@
     flex-direction: row;
     gap: 214px;
     justify-content: center;
+}
+
+.frame-3.fixed {
+    position: fixed;
+
+    -webkit-backdrop-filter: blur(54px);
+    backdrop-filter: blur(54px);
+
+    background-color: #F3EFE899;
+    color: black;
+    z-index: 1;
+}
+
+.navbar-container {
+    width: 100%;
+    height: 88px;
+}
+
+.fixed #logo {
+    filter: invert(100%);
+}
+
+.fixed a {
+    color: black
 }
 
 @media only screen and (min-width: 1024px) {
@@ -42,12 +68,11 @@
     align-items: center;
 }
 
-
-
-.frame-1 a {
+a {
     text-decoration: none;
     color: white;
 }
+
 
 .frame-63 {
     width: 100%;
@@ -93,12 +118,10 @@
 @media screen and (max-width: 900px) {
     .header__title {
         max-width: 360px;
-        
-    }
-
-    .header_subheadline {
 
     }
+
+    .header_subheadline {}
 
     .frame-63 {
         align-self: center;

@@ -1,12 +1,3 @@
-.reviews__content {
-    max-width: 1170px;
-    margin: 0 16px;
-
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 30px;
-}
-
 .reviews__card {
     background-color: var(--beige-200);
     color: var(--black);
@@ -18,6 +9,15 @@
     flex: 1;
 
     padding: 40px;
+}
+
+.reviews__content {
+    max-width: 1170px;
+    margin: 0 16px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
 }
 
 .reviews__card>span {
@@ -51,7 +51,17 @@
 }
 
 @media screen and (max-width: 900px) {
+    .reviews__card {
+        border-radius: 20px;
+
+        padding: 20px;
+    }
+
     .reviews__content {
         grid-template-columns: auto;
+    }
+
+    .review__card_reviewer {
+        align-items: end;
     }
 }

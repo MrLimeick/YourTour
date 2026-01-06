@@ -1,12 +1,3 @@
-.histories__content {
-    width: 100%;
-    max-width: 1170px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-}
-
 .histories__card {
     height: 567px;
     width: 100%;
@@ -26,15 +17,24 @@
     position: relative;
 }
 
+.histories__content {
+    width: 100%;
+    max-width: 1170px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 .histories__card_text {
     display: flex;
     flex-direction: column;
     gap: 37px;
 
-    width: 554px;
+    max-width: 554px;
 }
 
-.histories__card > img {
+.histories__card>img {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -79,7 +79,7 @@
     color: var(--white);
 }
 
-.histories__card:hover > img {
+.histories__card:hover>img {
     scale: 1.2;
 }
 
@@ -100,4 +100,16 @@
 .histories__card:hover .histories__card_footer_read_me {
     background-color: var(--green-400);
     border-radius: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .histories__card {
+        border-radius: 20px;
+        padding: 30px;
+        height: 455px;
+    }
+
+    .histories__card_footer_buttons {
+        display: none;
+    }
 }

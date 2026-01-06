@@ -1,3 +1,27 @@
+/* === Tab View === */
+
+.tab {
+    -webkit-user-select: none;
+    user-select: none;
+
+    cursor: pointer;
+    height: 31px;
+}
+
+.tab.active {
+    color: var(--orange-200);
+}
+
+.tab.active::after {
+    content: '';
+    background-color: var(--orange-200);
+    display: block;
+    width: 100%;
+    height: 2px;
+}
+
+/* === Choose Tour === */
+
 .choose_tour {
     width: 100%;
     max-width: 1170px;
@@ -21,7 +45,7 @@
     }
 }
 
-/* ---- card ---- */
+/* === Card === */
 
 .choose_tour__card {
     position: relative;
@@ -34,14 +58,9 @@
 .choose_tour__card>img {
     object-fit: cover;
 
-    /* position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;*/
-
     width: 100%;
     height: 100%;
+
     transition: all 300ms ease;
 }
 

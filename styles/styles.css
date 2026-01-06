@@ -92,12 +92,11 @@ section {
 }
 
 /* ---- text_button ---- */
-.white_text_button {
-    color: white;
+.text_button {
     position: relative;
 }
 
-.white_text_button:hover::after {
+.text_button:hover::after {
     content: '';
     position: absolute;
     left: 0;
