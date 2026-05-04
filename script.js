@@ -12,5 +12,5 @@ let nav = this.document.getElementById("navbar")
 let logo = this.document.getElementById("logo")
 
 window.addEventListener("scroll", function (e) {
-    nav.classList = this.window.scrollY >= 450 ? "frame-3 fixed" : "frame-3"
+    nav.classList = this.window.scrollY >= 450 ? "navbar fixed" : "navbar"
 })

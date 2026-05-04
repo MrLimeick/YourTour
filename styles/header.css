@@ -10,9 +10,9 @@
     background-size: cover;
 }
 
-/* === NavBar === */
+/* === MARK: NavBar === */
 
-.frame-3 {
+.navbar {
     width: 100%;
     height: 88px;
 
@@ -22,7 +22,7 @@
     justify-content: center;
 }
 
-.frame-3.fixed {
+.navbar.fixed {
     position: fixed;
 
     -webkit-backdrop-filter: blur(54px);
@@ -44,20 +44,6 @@
 
 .fixed a {
     color: black
-}
-
-@media only screen and (min-width: 1024px) {
-    .frame-64 {
-        max-width: 1168px;
-        width: 100%;
-
-        margin: 0 57px;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
 }
 
 .frame-1 {
@@ -97,8 +83,21 @@ a {
     text-align: center;
 }
 
+.navbar_content {
+    max-width: 1168px;
+    width: 100%;
+
+    margin: 0 57px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @media only screen and (max-width: 1024px) {
-    .frame-64 {
+
+    .navbar_content {
         max-width: 1168px;
         width: 100%;
 
@@ -110,18 +109,20 @@ a {
         align-items: center;
     }
 
-    .frame-64 .frame-1 {
+    .navbar_content .frame-1 {
         display: none;
     }
 }
 
 @media screen and (max-width: 900px) {
+    #logo {
+        height: 22px;
+    }
+
     .header__title {
         max-width: 360px;
 
     }
-
-    .header_subheadline {}
 
     .frame-63 {
         align-self: center;

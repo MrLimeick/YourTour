@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="styles/histories.css" />
     <link rel="stylesheet" href="styles/end.css" />
 
-
-
+    <!-- Стили для мобильных (т.е. с экраном <900px) устройств -->
     <link rel="stylesheet" media="screen and (max-width: 900px)" href="styles/mobile/styles.css" />
     <link rel="stylesheet" media="screen and (max-width: 900px)" href="styles/mobile/build.css" />
     <link rel="stylesheet" media="screen and (max-width: 900px)" href="styles/mobile/font-style.css" />
@@ -28,8 +27,8 @@
 <body>
     <div id="header">
         <div class="navbar-container">
-            <div id="navbar" class="frame-3">
-                <div class="frame-64">
+            <div id="navbar" class="navbar">
+                <div class="navbar_content">
                     <img id="logo" src="YourTour.svg"></img>
                     <div class="frame-1 p-normal">
                         <a class="text_button" href="#">Туры</a>
@@ -53,9 +52,9 @@
     </div>
 
     <section id="choose_tour" class="labeled_section"> <!-- choose_tour -->
-        <div class="frame-70">
+        <div class="labeled_tab_container">
             <h2>Выбери свой тур</h2>
-            <div class="frame-5 p-big">
+            <div class="tab_container p-big">
                 <span class="tab active" style="height: 31px;" onclick="click()">Популярные</span>
                 <span class="tab">Авторские</span>
                 <span class="tab">Походы</span>
@@ -157,20 +156,21 @@
         <form class="p-normal build__form">
             <div class="build__form-row">
                 <div class="build__element">
-                    <span>Имя</span>
-                    <input type="text" placeholder="Введите Ваше имя" class="p-normal" required>
+                    <label for="name">Имя</label>
+                    <input name="name" type="text" placeholder="Введите Ваше имя" class="p-normal" required>
                 </div>
                 <div class="build__element">
-                    <span>Направление</span>
-                    <select>
-                        <option class="p-normal">Куда хотите ехать</option>
+                    <label for="dst">Направление</label>
+                    <select name="dst" class="p-normal">
+                        <option selected disabled hidden>Куда хотите ехать</option>
+                        <option>Пункт выбран</option>
                     </select>
                 </div>
             </div>
             <div class="build__form-row">
                 <div class="build__element">
-                    <span>Email</span>
-                    <input type="email" placeholder="example@mail.com" class="p-normal" required>
+                    <span for="email">Email</span>
+                    <input name="email" type="email" placeholder="example@mail.com" class="p-normal" required>
                 </div>
                 <div class="build__element">
                     <label for="phone">Телефон:</label>
@@ -180,31 +180,31 @@
             </div>
             <div class="build__form-row">
                 <div class="build__element">
-                    <span>Дата от</span>
-                    <input type="datetime" placeholder="ДД.ММ.ГГГГ" class="p-normal" required>
+                    <label for="date_ot">Дата от</label>
+                    <input name="date_ot" type="date" placeholder="ДД.ММ.ГГГГ" class="p-normal" required>
                 </div>
                 <div class="build__element">
-                    <span>Дата до</span>
-                    <input type="datetime" placeholder="ДД.ММ.ГГГГ" class="p-normal" required>
+                    <label for="date_do">Дата до</label>
+                    <input name="date_do" type="date" placeholder="ДД.ММ.ГГГГ" class="p-normal" required>
                 </div>
             </div>
 
             <div class="comment">
-                <label>Комментарий</label>
-                <textarea class="p-normal"></textarea>
+                <label for="comment">Комментарий</label>
+                <textarea name="comment" class="p-normal"></textarea>
             </div>
 
             <div class="build__form_radio">
                 <label>Вам есть 18 лет?</label>
                 <div class="build__form_radio_group">
-                    <label class="radio">Да
+                    <span class="radio" class="p-normal">Да
                         <input type="radio" checked="checked" name="radio" class="p-normal">
                         <span class="radio-checkmark"></span>
-                    </label>
-                    <label class="radio">Нет
+                    </span>
+                    <span class="radio" class="p-normal">Нет
                         <input type="radio" checked="checked" name="radio">
                         <span class="radio-checkmark"></span>
-                    </label>
+                    </span>
                 </div>
             </div>
 
@@ -220,9 +220,9 @@
             </div>
 
             <div class="build__form_buttons">
-                <input type="submit" value="Найти тур" class="find_tour p-normal">
+                <input type="submit" value="Найти тур" class="build__button build__find_tour p-normal">
                 <!-- <a href="#choose_tour" class="find_tour p-normal">Найти тур</a> -->
-                <input type="reset" value="Сбросить" class="reset_button p-normal">
+                <input type="reset" value="Сбросить" class="build__button build__reset_button p-normal">
             </div>
         </form>
     </section>

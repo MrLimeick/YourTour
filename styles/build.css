@@ -26,28 +26,81 @@
     flex: 1;
 }
 
+/* === MARK: Элементы ввода === */
+
+textarea,
 input {
+    resize: none;
     border-radius: 10px;
     background-color: var(--beige-100);
     border: 1px solid var(--beige-200);
-    color: var(--gray-300);
+    color: black;
     padding: 20px;
 }
+
+textarea:hover,
+input:hover {
+    background-color: var(--beige-200);
+}
+
+textarea:focus,
+input:focus {
+    background-color: var(--beige-200);
+    border: 1px solid var(--gray-300);
+    outline: none;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: var(--gray-300);
+}
+
+/* 
+    https://devgex.com/en/article/00017036
+    Пока они не заполнены - они серые, однако при заполнении и фокусе чёрные
+    Не совсем уверен, верно ли это, или нет, но…
+ */
+input[type="date"]:not(:focus)::-webkit-datetime-edit-text,
+input[type="date"]:not(:focus)::-webkit-datetime-edit-month-field,
+input[type="date"]:not(:focus)::-webkit-datetime-edit-day-field,
+input[type="date"]:not(:focus)::-webkit-datetime-edit-year-field {
+    color: var(--gray-300);
+}
+
+input[type="date"]:valid::-webkit-datetime-edit-text,
+input[type="date"]:valid::-webkit-datetime-edit-month-field,
+input[type="date"]:valid::-webkit-datetime-edit-day-field,
+input[type="date"]:valid::-webkit-datetime-edit-year-field {
+    color: black;
+}
+
+/* В Figma календаря нет */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    visibility: hidden;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    flex: 1;
+}
+
+/* === MARK: Пикер === */
 
 select {
     border-radius: 10px;
     background-color: var(--beige-100);
     border: 1px solid var(--beige-200);
-    color: var(--gray-300);
+    color: black;
     padding: 20px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 142%;
 }
 
+/* 
+    Figma: "Непосредственно сам выпадающий список необходимо сделать стандартным браузерным"
+    Это ведь так-же делает выпадающий список стандартным браузерным а не стандартным для, верно?
+ */
 select,
 ::picker(select) {
     appearance: base-select;
@@ -62,31 +115,7 @@ select:open::picker-icon {
     rotate: 180deg;
 }
 
-.comment {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-
-    flex: 1;
-}
-
-textarea {
-    resize: none;
-
-    border-radius: 10px;
-    background-color: var(--beige-100);
-    border: 1px solid var(--beige-200);
-    color: var(--gray-300);
-    padding: 20px;
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 142%;
-
-    flex: 1;
-}
+/* === MARK: Радио-кнопки и чек-бокс === */
 
 .build__form_radio {
     display: flex;
@@ -106,36 +135,54 @@ textarea {
     gap: 19px;
 }
 
+/* === MARK: Кнопки === */
+
 .build__form_buttons {
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
 
-.find_tour {
+.build__button {
     display: block;
     box-sizing: border-box;
-    padding: 15px 30px;
     width: 235px;
-    background-color: var(--green-400);
-    border-radius: 10px;
+    height: 58px;
+    padding: 15px;
 
-    color: var(--white);
+    border-radius: 10px;
     text-align: center;
     text-decoration: none;
+    cursor: pointer;
 }
 
-.reset_button {
-    display: block;
-    box-sizing: border-box;
-    padding: 15px 30px;
-    width: 235px;
+/* === MARK: Кнопка "Найти тур" === */
+
+/* FIXME: При фокусе ломается цвет */
+.build__find_tour {
+    background-color: var(--green-400);
+    color: var(--white);
+}
+
+.build__find_tour:hover {
+    background-color: var(--green-300);
+}
+
+.build__find_tour:active {
+    background-color: var(--green-200);
+}
+
+/* === MARK: Кнопка "Сбросить" === */
+
+.build__reset_button {
     background-color: var(--green-100);
-    border-radius: 10px;
-
     color: var(--green-400);
-    text-align: center;
-    text-decoration: none;
+}
 
-    cursor: pointer;
+.build__reset_button:hover {
+    background-color: var(--gray-100);
+}
+
+.build__reset_button:active {
+    background-color: var(--gray-200);
 }
