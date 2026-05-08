@@ -97,26 +97,27 @@ a {
 
 @media only screen and (max-width: 1024px) {
 
-    .navbar_content {
-        max-width: 1168px;
-        width: 100%;
-
-        margin: 0 57px;
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     .navbar_content .frame-1 {
         display: none;
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     #logo {
         height: 22px;
+    }
+
+    .navbar_content {
+        max-width: 1168px;
+        width: 100%;
+
+        margin: 0 20px;
+        
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .header__title {

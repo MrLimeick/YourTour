@@ -46,6 +46,16 @@
     align-items: center;
     justify-content: center;
     gap: 7px;
-    padding: 21px;
+    padding: 21px 0px;
     height: 98px;
+}
+
+.footer__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.footer__button {
+    gap: 5px;
 }

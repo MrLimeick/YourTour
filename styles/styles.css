@@ -21,7 +21,9 @@
 }
 
 body {
-    width: 100%;
+    width: 100vw;
+    min-width: 360px;
+    
     display: flex;
     flex-direction: column;
     gap: 135px;
@@ -29,7 +31,7 @@ body {
     font-family: 'Roboto', sans-serif;
 
     background-color: var(--beige-100);
-    color: var(--black)
+    color: var(--black);
 }
 
 section {
@@ -49,7 +51,7 @@ section {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     body {
         gap: 75px
     }

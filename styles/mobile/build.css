@@ -40,6 +40,7 @@ select {
     display: flex;
     flex-direction: row;
 
+    gap: 0;
     justify-content: space-between;
 }
 
@@ -47,6 +48,7 @@ select {
     display: block;
     box-sizing: border-box;
 
-    padding: 12px;
+    width: 134px;
+    padding: 15px 30px;
     width: 134px;
 }
